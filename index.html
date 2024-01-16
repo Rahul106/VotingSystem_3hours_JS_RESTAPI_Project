@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Monitor Vote System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Class Monitor Vote</h1>
+        <p>Total Votes: <span id="totalVotes">0</span></p>
+
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" placeholder="Enter your name">
+
+        <label for="monitorSelect">Choose Monitor:</label>
+        <select id="monitorSelect">
+            <option value="suresh">Suresh</option>
+            <option value="deepank">Deepank</option>
+            <option value="abhik">Abhik</option>
+            <!-- Add more monitors as needed -->
+        </select>
+
+        <button onclick="vote()">Vote</button>
+
+        <ul class="vote-list" id="voteList"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
